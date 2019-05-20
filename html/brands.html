@@ -1,0 +1,714 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <link rel="stylesheet" href="style/bootstrap.css" />
+  <link rel="stylesheet" href="style/slick.css" />
+  <link rel="stylesheet" href="style/jquery-ui.css" />
+  <link rel="stylesheet" href="style/dd.css" />
+  <link rel="stylesheet" href="style/flags.css" />
+  <link rel="stylesheet" href="style/style.css" />
+  <title>Selectis</title>
+</head>
+
+<body>
+
+  <header class="full-width">
+    <div class="add_section full-width">
+      <div class="container top-nav">
+        <div class="pull-left">
+          <a href="index.html">
+            <img src="img/home.png" /> <span class="hidden-xs">HOME</span></a>
+          <a href=""><span class="hidden-xs">ENGLISH</span><span class="hidden-md hidden-lg hidden-sm">EN</span></a>
+        </div>
+        <div class="pull-right">
+          <a href="#" data-toggle="modal" data-target="#login-reg"><span class="hidden-md hidden-lg hidden-sm"><img src="img/account2.png" alt=""></span><span class="hidden-xs">Login/Register</span></a>
+          <a href=""><span class="hidden-md hidden-lg hidden-sm"><img src="img/wishlist2.png" alt=""></span><span class="hidden-xs">Wishlist</span></a>
+          <a href="#" id="cartEnable" class=""><span class="hidden-md hidden-lg hidden-sm"><img src="img/lock2.png" alt=""></span><span class="hidden-xs">My Cart</span></a>
+          <div class="cart_box" id="cart_bx">
+            <div class="cart_contents full-width">
+              <h2>recently adDed to cart</h2>
+              <h1 class="ttl-crt">2 items </h1>
+              <div class="border_dashed full-width">
+                <img src="img/micky-deb.png" alt="cart" class="mCS_img_loaded">
+                <h1>Disney Store Minnie Mouse Halloween Small</h1>
+
+                <h3>KD 50.00</h3>
+                <h1 class="crt-price">Qty : 1</h1>
+                <h3 class="cart-btnx crt-mt-10">
+                  <a href="cart.html">
+                    <img src="img/edit.png" alt="">
+                  </a>
+                  <a class="delete-4-cart" href="">
+                    <img src="img/dlt.png" alt="">
+                  </a>
+                </h3>
+                <p class="cart-see-more" data-toggle="collapse" data-target="#crtinx">View Details </p>
+                <div id="crtinx" class="collapse cart-see-more cbz">
+                  <p>
+                    <span>color</span>
+                  </p>
+                  <p>Red</p>
+                </div>
+              </div>
+              <!-- /.border_dashed -->
+              <div class="border_dashed full-width">
+                <img src="img/micky-deb.png" alt="cart" class="mCS_img_loaded">
+                <h1>Disney Store Minnie Mouse Halloween Small</h1>
+
+                <h3>KD 50.00</h3>
+                <h1 class="crt-price">Qty : 1</h1>
+                <h3 class="cart-btnx crt-mt-10">
+                  <a href="cart.html">
+                    <img src="img/edit.png" alt="">
+                  </a>
+                  <a class="delete-4-cart" href="">
+                    <img src="img/dlt.png" alt="">
+                  </a>
+                </h3>
+                <p class="cart-see-more" data-toggle="collapse" data-target="#crtinx1">View Details </p>
+                <div id="crtinx1" class="collapse cart-see-more cbz">
+                  <p>
+                    <span>color</span>
+                  </p>
+                  <p>Red</p>
+                </div>
+              </div>
+              <!-- /.border_dashed -->
+              <h1 class="crt-total">Total</h1>
+              <h1 class="crt-price-ttl">KD 100.00</h1>
+            </div>
+
+            <!-- /.cart_contents -->
+            <a href="#" class="button-crt" type="button">VIEW SHOPPING BAG</a>
+          </div>
+          <a href=""><span class="hidden-md hidden-lg hidden-sm"><img src="img/logout.png" alt=""></span><span class="hidden-xs">My Account</span></a>
+        </div>
+
+      </div>
+      <!-- /.container -->
+    </div>
+    <!-- /.add_section -->
+
+    <div class="top_section full-width">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-4 col-md-4 col-sm-4 fl_width_562 p_top_40">
+            <span>Choose Currency:</span>
+            <select name="countries" id="countries" style="width:80px;">
+              <option value="kw" data-image="images/msdropdown/icons/blank.gif" data-imagecss="flag kw" data-title="Kuwait">&nbsp; KWD</option>
+              <option value="sa" data-image="images/msdropdown/icons/blank.gif" data-imagecss="flag sa" data-title="Saudi Arabia">&nbsp; SAR</option>
+              <option value="ae" data-image="images/msdropdown/icons/blank.gif" data-imagecss="flag ae" data-title="United Arab Emirates">&nbsp;AED</option>
+              <option value="bh" data-image="images/msdropdown/icons/blank.gif" data-imagecss="flag bh" data-title="Bahrain">&nbsp;BHD</option>
+              <option value="om" data-image="images/msdropdown/icons/blank.gif" data-imagecss="flag om" data-title="Oman">&nbsp;OMR</option>
+              <option value="qa" data-image="images/msdropdown/icons/blank.gif" data-imagecss="flag qa" data-title="Qatar">&nbsp; QAR</option>
+              <option value="uk" data-image="images/msdropdown/icons/blank.gif" data-imagecss="flag uk" data-title="United Kingdom">&nbsp; GBP</option>
+              <option value="us" data-image="images/msdropdown/icons/blank.gif" data-imagecss="flag us" data-title="United States">&nbsp;USD</option>
+              <option value="de" data-image="images/msdropdown/icons/blank.gif" data-imagecss="flag de" data-title="Germany">&nbsp;EUR</option>
+            </select>
+            <!-- <a href="#" class="arab">العربيّة</a> -->
+          </div>
+          <!-- /.col-lg-4 -->
+          <div class="col-lg-4 col-md-4 col-sm-4 fl_width_562 text-center">
+            <a href="#">
+              <img src="img/logo.png" alt="logo" class="mCS_img_loaded" />
+            </a>
+            <!-- /.logo -->
+          </div>
+          <!-- /.col-lg-4 -->
+          <div class="col-lg-4 col-md-4 col-sm-4 fl_width_562 p_top_40">
+            <div class="search">
+              <input type="text" placeholder="Search here..." />
+              <img src="img/search.png" alt="" srcset="" />
+            </div>
+            <!-- /.cart_box -->
+          </div>
+          <!-- /.col-lg-4 -->
+        </div>
+        <!-- /.row -->
+      </div>
+      <!-- /.container -->
+    </div>
+    <!-- /.top_section -->
+
+    <div class="navigation full-width">
+      <div class="container">
+        <nav class="navbar navbar-default">
+          <div class="navbar-header">
+            <button class="navbar-toggle" type="button" data-toggle="collapse" data-target=".js-navbar-collapse">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+          </div>
+          <div class="collapse navbar-collapse js-navbar-collapse">
+            <ul class="nav navbar-nav">
+              <li>
+                <a href="#">New</a>
+              </li>
+              <li class="dropdown mega-dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Categories</a>
+                <ul class="dropdown-menu mega-dropdown-menu row">
+                  <li class="col-lg-7 col-md-7 col-sm-12 col-xs-12">
+                    <h2>Categories</h2>
+                    <div class="row">
+                      <ul class="full-width block_elements">
+                        <li class="col-lg-4 col-md-4 col-sm-4  fl_width_562">
+                          <a href="#">Women </a>
+                          <a href="#">Men </a>
+                          <a href="#">Baby</a>
+                          <a href="#">Kids</a>
+                        </li>
+                        <!-- /.col-lg-4 -->
+                        <li class="col-lg-4 col-md-4 col-sm-4  fl_width_562">
+                          <a href="#">Homeware</a>
+                          <a href="#">Stationary</a>
+                          <a href="#">Toys</a>
+                        </li>
+                        <!-- /.col-lg-4 -->
+                        <li class="col-lg-4 col-md-4 col-sm-4  fl_width_562">
+                          <a href="#">Collectibles</a>
+                          <a href="#">Tech</a>
+                          <a href="#">Book</a>
+                        </li>
+                        <!-- /.col-lg-4 -->
+                      </ul>
+                    </div>
+                    <!-- /.row -->
+                  </li>
+                  <li class="col-lg-5 col-md-5 col-sm-12 col-xs-12">
+                    <h2>POPULAR NOW</h2>
+                    <div class="row">
+                      <ul class="full-width custom_padding">
+                        <li class="col-lg-4 col-md-4 col-sm-4  for-small">
+                          <a href="#">
+                            <img src="img/pop1.jpg" alt="image" class="mCS_img_loaded" />
+                            <span>Crew Neck Short</span>
+                          </a>
+                          <!-- /.anchor_tag -->
+                        </li>
+                        <li class="col-lg-4 col-md-4 col-sm-4  for-small">
+                          <a href="#">
+                            <img src="img/pop2.jpg" alt="image" class="mCS_img_loaded" />
+                            <span>Crew Neck Short</span>
+                          </a>
+                          <!-- /.anchor_tag -->
+                        </li>
+                        <li class="col-lg-4 col-md-4 col-sm-4  for-small">
+                          <a href="#">
+                            <img src="img/pop3.jpg" alt="image" class="mCS_img_loaded" />
+                            <span>Crew Neck Short</span>
+                          </a>
+                          <!-- /.anchor_tag -->
+                        </li>
+                      </ul>
+                      <!-- /.full-width -->
+                    </div>
+                    <!-- /.row -->
+                  </li>
+                </ul>
+                <!-- /.mega_dropdown_menu -->
+              </li>
+              <!-- /.mega-dropdown -->
+              <li>
+                <a href="#">Brands</a>
+              </li>
+
+              <li>
+                <a href="#">Characters</a>
+              </li>
+              <li>
+                <a href="#">Shop By Interest</a>
+              </li>
+              <li>
+                <a href="#">Gift Cards</a>
+              </li>
+              <li>
+                <a href="#">Sales & Offers</a>
+              </li>
+            </ul>
+          </div>
+          <!-- /.nav-collapse -->
+
+          <!-- /.search_box_cover -->
+        </nav>
+      </div>
+      <!-- /.container -->
+    </div>
+    <!-- /.navigation -->
+  </header>
+
+    <section class="sec-banner">
+      <div class="banner">
+        <img src="img/banner.png" class="img-responsive" alt="banner" />
+        <h2 class="text-uppercase">Our <span class="text-uppercase">Brands</span>
+        </h2>
+      </div>
+    </section>
+
+    <div class="sec-crumb">
+      <div class="container">
+        <ol class="breadcrumb">
+          <li><a href="#">Home</a></li>
+          <li class="active">Our Brands</li>
+        </ol>
+      </div>
+    </div>
+
+    <section class="pb-45">
+      <div class="container">
+        <div class="row brands">
+          <div class="col-lg-3 col-md-3 col-sm-4 col-xs-6">
+            <a href="inner-option.html">				
+              <img src="img/brand1.jpg" alt="brand" class="brand-loaded">
+            </a><!-- Anchor -->
+          </div><!-- /.col-lg-4 -->
+          <div class="col-lg-3 col-md-3 col-sm-4 col-xs-6">
+            <a href="inner-option.html">				
+              <img src="img/brand6.jpg" alt="brand" class="brand-loaded">
+            </a><!-- Anchor -->
+          </div><!-- /.col-lg-4 -->
+          <div class="col-lg-3 col-md-3 col-sm-4 col-xs-6">
+            <a href="inner-option.html">				
+              <img src="img/brand2.jpg" alt="brand" class="brand-loaded">
+            </a><!-- Anchor -->
+          </div><!-- /.col-lg-4 -->
+          <div class="col-lg-3 col-md-3 col-sm-4 col-xs-6">
+            <a href="inner-option.html">				
+              <img src="img/brand3.jpg" alt="brand" class="brand-loaded">
+            </a><!-- Anchor -->
+          </div><!-- /.col-lg-4 -->
+          <div class="col-lg-3 col-md-3 col-sm-4 col-xs-6">
+            <a href="inner-option.html">				
+              <img src="img/brand4.jpg" alt="brand" class="brand-loaded">
+            </a><!-- Anchor -->
+          </div><!-- /.col-lg-4 -->
+          <div class="col-lg-3 col-md-3 col-sm-4 col-xs-6">
+            <a href="inner-option.html">				
+              <img src="img/brand5.jpg" alt="brand" class="brand-loaded">
+            </a><!-- Anchor -->
+          </div><!-- /.col-lg-4 -->
+          <div class="col-lg-3 col-md-3 col-sm-4 col-xs-6">
+            <a href="inner-option.html">				
+              <img src="img/brand6.jpg" alt="brand" class="brand-loaded">
+            </a><!-- Anchor -->
+          </div><!-- /.col-lg-4 -->
+          <div class="col-lg-3 col-md-3 col-sm-4 col-xs-6">
+            <a href="inner-option.html">				
+              <img src="img/brand1.jpg" alt="brand" class="brand-loaded">
+            </a><!-- Anchor -->
+          </div><!-- /.col-lg-4 -->
+          <div class="col-lg-3 col-md-3 col-sm-4 col-xs-6">
+              <a href="inner-option.html">				
+                <img src="img/brand1.jpg" alt="brand" class="brand-loaded">
+              </a><!-- Anchor -->
+            </div><!-- /.col-lg-4 -->
+            <div class="col-lg-3 col-md-3 col-sm-4 col-xs-6">
+              <a href="inner-option.html">				
+                <img src="img/brand6.jpg" alt="brand" class="brand-loaded">
+              </a><!-- Anchor -->
+            </div><!-- /.col-lg-4 -->
+            <div class="col-lg-3 col-md-3 col-sm-4 col-xs-6">
+              <a href="inner-option.html">				
+                <img src="img/brand2.jpg" alt="brand" class="brand-loaded">
+              </a><!-- Anchor -->
+            </div><!-- /.col-lg-4 -->
+            <div class="col-lg-3 col-md-3 col-sm-4 col-xs-6">
+              <a href="inner-option.html">				
+                <img src="img/brand3.jpg" alt="brand" class="brand-loaded">
+              </a><!-- Anchor -->
+            </div><!-- /.col-lg-4 -->
+            <div class="col-lg-3 col-md-3 col-sm-4 col-xs-6">
+              <a href="inner-option.html">				
+                <img src="img/brand4.jpg" alt="brand" class="brand-loaded">
+              </a><!-- Anchor -->
+            </div><!-- /.col-lg-4 -->
+            <div class="col-lg-3 col-md-3 col-sm-4 col-xs-6">
+              <a href="inner-option.html">				
+                <img src="img/brand5.jpg" alt="brand" class="brand-loaded">
+              </a><!-- Anchor -->
+            </div><!-- /.col-lg-4 -->
+            <div class="col-lg-3 col-md-3 col-sm-4 col-xs-6">
+              <a href="inner-option.html">				
+                <img src="img/brand6.jpg" alt="brand" class="brand-loaded">
+              </a><!-- Anchor -->
+            </div><!-- /.col-lg-4 -->
+            <div class="col-lg-3 col-md-3 col-sm-4 col-xs-6">
+              <a href="inner-option.html">				
+                <img src="img/brand1.jpg" alt="brand" class="brand-loaded">
+              </a><!-- Anchor -->
+            </div><!-- /.col-lg-4 -->
+        </div>
+
+        <div class="col-xs-12 text-center">
+            <a href="#" class="view-more-tbl">View More</a>
+          </div>
+      </div>
+    </section>
+
+    <footer>
+        <div class="container text-center">
+          <a href="aboutus.html" class="bold foot-main-h8">About Us</a>
+          <ul class="list-unstyled list-inline">
+            <li>
+              <a href="services.html">Services</a>
+            </li>
+            <li>
+              <a href="faq.html">FAQ</a>
+            </li>
+            <li>
+              <a href="career.html">Careers</a>
+            </li>
+            <li>
+              <a href="location.html">Contact us</a>
+            </li>
+            <li>
+              <a href="sitemap.html">Sitemap</a>
+            </li>
+            <li>
+              <a href="privacy.html">Privacy Policy</a>
+            </li>
+          </ul>
+          <a href="customer.html" class="bold foot-main-h8">Customer Service</a>
+          <ul class="list-unstyled list-inline">
+            <li>
+              <a href="How-it-works.html">How it works </a>
+            </li>
+            <li>
+              <a href="">Refund / exchange</a>
+            </li>
+            <li>
+              <a href="shipping.html">Shipment / International Shipping</a>
+            </li>
+            <li>
+              <a href="track.html">Order Tracking</a>
+            </li>
+            <li>
+              <a href="cookies.html">Cookies Policies</a>
+            </li>
+          </ul>
+        </div>
+        <div class="mthds">
+          <div class="container text-center">
+            <div class="shp">
+              Our Couriers :
+              <img class="imgshp" src="img/dhl.jpg" alt="" />
+            </div>
+            <div class="shp">
+              Payment Methods :
+              <img class="imgshp" src="img/Master-Card-icon.png" alt="" />
+              <img src="img/Visa-icon.png" class="imgshp" alt="" />
+              <img src="img/knet.png" class="imgshp" alt="" />
+            </div>
+    
+    
+              <div class="live-chat" data-spy="affix" data-offset-bottom="100">
+              <div class="chat-box">
+                <h4>LEAVE A MESSAGE <div class="pull-right clox">-</div></h4>
+                <input type="text"  placeholder="Your Name (Optional)" id="" class="inpt">
+                <input type="email" placeholder="Email Address" id="" class="inpt">
+                <textarea placeholder="How can we help you?" id="" class="inpt"></textarea>
+                <button class="button-main" type="button">SEND</button>
+              </div>
+              <button class="chat-clk">Live Chat <img src="img/chat-icn.png" alt=""></button>
+            </div>
+    
+    
+          </div>
+        </div>
+        <!-- live chat -->
+    
+    
+    
+        <!-- live chat -->
+    
+        <div class="foot-btm text-center">
+          <p>© Copyright 2018 Sellektis. All right Reserved</p>
+          <p>Powered By
+            <a href="http://www.mawaqaa.com">
+              <img src="img/mawaqaa.png" alt="">
+            </a>
+          </p>
+        </div>
+    </footer>
+  
+
+    <!-- modellll -->
+
+    <div id="login-reg" class="modal fade">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-body">
+            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+            <div class="col-md-12">
+              <div class="col-md-6 login">
+                <h3>Already Have an Account?</h3>
+                <p>
+                  Sign in to speed up the checkout process and save your order
+                  to account.
+                </p>
+                <div class="list-inline mp-0">
+                  <label class="radio-container"
+                    >By Email
+                    <input type="radio" checked="checked" name="radio1" />
+                    <span class="checkmark"></span>
+                  </label>
+                  <label class="radio-container"
+                    >By Mobile No. <input type="radio" name="radio1" />
+                    <span class="checkmark"></span>
+                  </label>
+                </div>
+                <input class="inpt" type="text" placeholder="Email" />
+                <input class="inpt" type="text" placeholder="Password" />
+                <button class="button-main" type="button">submit</button>
+                <div class="check_box_here">
+                  <span class="check">
+                    <input id="rem" value="1" name="" type="checkbox" />
+                    <label for="rem"></label>
+                  </span>
+                  <label for="rem">Remember</label>
+                </div>
+                <a class="frgt" href="#">Forgot Password?</a>
+                <div class="rlt">
+                  <div class="text-center line-mdl">
+                    <p class="or">OR</p>
+                    <div class="text-center pad">
+                      <a href="#"> <img src="img/fb-red.png" alt="" /> </a>
+                      <a href="#"> <img src="img/twit-red.png" alt="" /> </a>
+                      <a href="#"> <img src="img/insta-red.png" alt="" /> </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6 login">
+                <h3>New to Sellectis? Sign up now !</h3>
+                <p class="mitst">
+                  By creating an account you will be able to shop faster, be up
+                  to date on an order’s status, keep track of the orders you
+                  have previously made, and take part in Sellectis Life.
+                </p>
+                <button
+                  type="button"
+                  class="button-main mdt-signup"
+                  data-toggle="modal"
+                  data-target="#sign-up"
+                  data-dismiss="modal"
+                >
+                  Sign up
+                </button>
+                <div class="rlt">
+                  <div class="text-center line-mdl">
+                    <p class="or">OR</p>
+                    <div class="text-center pad">
+                      <a href="#"> <img src="img/fb-red.png" alt="" /> </a>
+                      <a href="#"> <img src="img/twit-red.png" alt="" /> </a>
+                      <a href="#"> <img src="img/insta-red.png" alt="" /> </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-12">
+              <div class="col-md-12">
+                <div class="gnk">
+                  <h3 class="keepi">
+                    Keep in mind a few basic password rules:
+                  </h3>
+                </div>
+                <!-- <div class="clearfix">&nbsp;</div> -->
+              </div>
+              <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 fl_width_562">
+                <h5>
+                  <img
+                    src="img/change-psd.png"
+                    alt="img"
+                    class="mCS_img_loaded"
+                  />
+                  <div class="clear"></div>
+                  Change your passwords periodically
+                </h5>
+              </div>
+              <!-- /.col-lg-6 -->
+
+              <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 fl_width_562">
+                <h5>
+                  <img src="img/avoid.png" alt="img" class="mCS_img_loaded" />
+                  <div class="clear"></div>
+                  Avoid re-using password for multiple sites
+                </h5>
+              </div>
+              <!-- /.col-lg-6 -->
+
+              <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 fl_width_562">
+                <h5>
+                  <img src="img/pswd.png" alt="img" class="mCS_img_loaded" />
+                  <div class="clear"></div>
+                  Use complex characters including uppercase and numbers
+                </h5>
+              </div>
+              <!-- /.col-lg-6 -->
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="sign-up" class="modal fade">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-body">
+            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+            <div class="col-md-12">
+              <div class="col-md-12 login">
+                <div class="mainhead text-center m-30">
+                  <h2>Sign up</h2>
+                </div>
+                <div class="gnk">
+                  <p class="psing">New to Sellectis? Sign up now with your Email</p>
+                  <div class="list-inline mp-0">
+                    <label class="radio-container">By Email
+                      <input type="radio" checked="checked" name="radio2">
+                      <span class="checkmark"></span>
+                    </label>
+                    <label class="radio-container">By Mobile No.
+                      <input type="radio" name="radio2">
+                      <span class="checkmark"></span>
+                    </label>
+                  </div>
+                </div>
+                <div class="">
+                    <div class="register_box full-width">
+                      
+                      <div class="row">
+                        <div class="col-lg-6 col-md-6">
+                          <input class="inpt" type="text" placeholder="First Name">
+                        </div>
+                        <!-- /.col-lg-6 -->
+                        <div class="col-lg-6 col-md-6">
+                          <input class="inpt" type="text" placeholder="Last Name">
+                        </div>
+                        <!-- /.col-lg-6 -->
+                        <div class="col-lg-6 col-md-6">
+                          <input class="inpt" type="text" placeholder="Email">
+                        </div>
+                        <!-- /.col-lg-6 -->
+                        <div class="col-lg-6 col-md-6">
+                          <select class="inpt country-code">
+                            <option>
+                              <img src="images/icons/tracking.png" alt="">
+                              +965
+                            </option>
+                          </select>
+                          <input class="inpt ph-no" type="text" placeholder="Phone Number">
+                        </div>
+                        <!-- /.col-lg-6 -->
+                        <div class="col-lg-6 col-md-6">
+                          <input class="inpt" type="text" placeholder="Password">
+                        </div>
+                        <!-- /.col-lg-6 -->
+                        <div class="col-lg-6 col-md-6">
+                          <input class="inpt" type="text" placeholder="Confirm Password">
+                        </div>
+                        <!-- /.col-lg-6 --> 
+                      </div>
+                      <!-- /.row -->
+                      
+                      <div class="full-width">
+                        <div class="check_box_here"> <span class="check">
+                          <input id="pre" value="1" name="" type="checkbox">
+                          <label for="pre"></label>
+                          </span>
+                          <label for="pre">I Agree to the <a href="terms.html">terms and conditions</a> </label>
+                        </div>
+                        <!-- /.check_box_here --> 
+                      </div>
+                      <!-- /.full-width -->
+                      
+                     
+                        <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 mt-25 clear col-md-offset-3">
+                            <button class="button-main" type="button" data-toggle="modal" data-target="#confirmation" data-dismiss="modal">submit</button>
+                        </div>
+  
+                     
+                    </div>
+                    <!-- /.register_box --> 
+                  </div>
+  
+              </div>
+  
+            </div>
+  
+  
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="confirmation" class="modal fade">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-body">
+              <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+              <div class="col-md-12">
+                <div class="col-md-12 login">
+                  <div class="mainhead text-center m-30 mt-0">
+                    <h2>registration confirmation</h2>
+                  </div>
+  
+                  <div class="">
+                      <div class="text-center">
+                          <img src="img/selctx.png" alt="">
+                          <p class="cnfrm">Thank you <br>
+                            for registering at <span> Sellektes</span> Online Store,<br>
+                            Please check your email/SMS for the verification code.</p>
+                                            </div>
+                                            <div class="col-lg-8 col-md-8  mt-25 clear col-md-offset-2 confirm-input">
+                                              <div class="col-md-2 col-sm-2 col-xs-2">
+                                                <input class="inpt" maxlength="1" type="text" placeholder="*">
+                                              </div>
+                                              <div class="col-md-2 col-sm-2 col-xs-2">
+                                                  <input class="inpt" maxlength="1" type="text" placeholder="*">
+                                                </div>
+                                                <div class="col-md-2 col-sm-2 col-xs-2">
+                                                    <input class="inpt" maxlength="1" type="text" placeholder="*">
+                                                  </div>
+                                                  <div class="col-md-2 col-sm-2 col-xs-2">
+                                                      <input class="inpt" maxlength="1" type="text" placeholder="*">
+                                                    </div>
+                                                    <div class="col-md-2 col-sm-2 col-xs-2">
+                                                        <input class="inpt" maxlength="1" type="text" placeholder="*">
+                                                    </div>
+                                                      <div class="col-md-2 col-sm-2 col-xs-2">
+                                                          <input class="inpt" maxlength="1" type="text" placeholder="*">
+                                                    </div>
+                                            </div>
+                      <div class="register_box full-width">
+                          <div class="col-lg-8 col-md-8  mt-25 clear col-md-offset-2">
+                              <button class="button-main" type="button">Verify</button>
+                              <a href="#" class="resend">Didn't receive the Code ?<span> Resend Code</span></a>
+                          </div>
+                       </div>
+                      <!-- /.register_box --> 
+                    </div>
+    
+                </div>   
+              </div>
+            </div>
+          </div>
+        </div>
+    </div>
+
+    <!-- modellll -->
+    <script src="js/jquery.js"></script>
+    <script src="js/popper.js"></script>
+    <script src="js/jquery-ui.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/slick.js"></script>
+    <script src="js/dd.js"></script>
+    <script src="js/custom.js"></script>
+  </body>
+</html>

@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<req:ShipmentRequest xmlns:req="http://www.dhl.com" 
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.dhl.com ship-val-global-req.xsd" schemaVersion="6.2">
+    <Request>
+        <ServiceHeader>
+            <MessageTime>2019-04-25T13:16:33+00:00</MessageTime>
+            <MessageReference>Package created from OpenCart</MessageReference>
+            <SiteID>SwanBoutique</SiteID>
+            <Password>denplrgFkC</Password>
+        </ServiceHeader>
+        <MetaData>
+            <SoftwareName>3PV</SoftwareName>
+            <SoftwareVersion>6.2</SoftwareVersion>
+        </MetaData>
+    </Request>
+    <RegionCode>AP</RegionCode>
+    <RequestedPickupTime>Y</RequestedPickupTime>
+    <NewShipper>N</NewShipper>
+    <LanguageCode>en</LanguageCode>
+    <PiecesEnabled>Y</PiecesEnabled>
+    <Billing>
+        <ShipperAccountNumber>968830402</ShipperAccountNumber>
+        <ShippingPaymentType>S</ShippingPaymentType>
+        <BillingAccountNumber>968830402</BillingAccountNumber>
+    </Billing>
+    <Consignee>
+        <CompanyName></CompanyName>
+        <AddressLine>kuwait</AddressLine>
+        <AddressLine>saudi arabia</AddressLine>
+        <City>AN NAFAL</City>
+        <PostalCode>966</PostalCode>
+        <CountryCode>SA</CountryCode>
+        <CountryName>Saudi Arabia</CountryName>
+        <Contact>
+            <PersonName></PersonName>
+            <PhoneNumber>009662522</PhoneNumber>
+            <Email>acc@swanbtq.com</Email>
+        </Contact>
+    </Consignee>
+    <Commodity>
+        <CommodityCode>cc</CommodityCode>
+        <CommodityName>cn</CommodityName>
+    </Commodity>
+    <Dutiable>
+        <DeclaredValue>5290</DeclaredValue>
+        <DeclaredCurrency>SAR</DeclaredCurrency>
+    </Dutiable>
+    <UseDHLInvoice>Y</UseDHLInvoice>
+    <DHLInvoiceLanguageCode>en</DHLInvoiceLanguageCode>
+    <DHLInvoiceType>CMI</DHLInvoiceType>
+    <ExportDeclaration>
+        <InvoiceNumber>191</InvoiceNumber>
+        <InvoiceDate>2019-04-25</InvoiceDate>
+        <ExportLineItem>
+            <LineNumber>1</LineNumber>
+            <Quantity>1</Quantity>
+            <QuantityUnit>PCS</QuantityUnit>
+            <Description>2ND SKIN CO</Description>
+            <Value>5290.00</Value>
+            <Weight>
+                <Weight>2</Weight>
+                <WeightUnit>K</WeightUnit>
+            </Weight>
+            <GrossWeight>
+                <Weight>2</Weight>
+                <WeightUnit>K</WeightUnit>
+            </GrossWeight>
+        </ExportLineItem>
+    </ExportDeclaration>
+    <Reference>
+        <ReferenceID>191</ReferenceID>
+    </Reference>
+    <ShipmentDetails>
+        <NumberOfPieces>1</NumberOfPieces>
+        <Pieces>
+            <Piece>
+                <PieceID>1</PieceID>
+                <PackageType>OD</PackageType>
+                <Weight>2</Weight>
+            </Piece>
+        </Pieces>
+        <Weight>2</Weight>
+        <WeightUnit>K</WeightUnit>
+        <GlobalProductCode>1</GlobalProductCode>
+        <LocalProductCode>1</LocalProductCode>
+        <Date>2019-04-25</Date>
+        <Contents>Swan Boutique></Contents>
+        <DoorTo>DD</DoorTo>
+        <DimensionUnit>C</DimensionUnit>
+        <IsDutiable>N</IsDutiable>
+        <CurrencyCode>SAR</CurrencyCode>
+    </ShipmentDetails>
+    <Shipper>
+        <ShipperID>968830402</ShipperID>
+        <CompanyName>Swan Boutique</CompanyName>
+        <RegisteredAccount>968830402</RegisteredAccount>
+        <AddressLine>c/o almazraa center , unit 8, </AddressLine>
+        <AddressLine>po Box 47442,ZIPCODE 12311,RIY</AddressLine>
+        <City>Riyadh</City>
+        <Division>Riyadh</Division>
+        <PostalCode>12311</PostalCode>
+        <CountryCode>SA</CountryCode>
+        <CountryName>Saudi Arabia</CountryName>
+        <Contact>
+            <PersonName>Swan Boutique</PersonName>
+            <PhoneNumber>+966534303499</PhoneNumber>
+            <Email>info@swanbtq.com</Email>
+        </Contact>
+    </Shipper>
+    <Notification>
+        <EmailAddress>acc@swanbtq.com</EmailAddress>
+        <Message>Track the shipment by given URL.</Message>
+    </Notification>
+    <LabelImageFormat>PDF</LabelImageFormat>
+    <RequestArchiveDoc>Y</RequestArchiveDoc>
+    <NumberOfArchiveDoc>1</NumberOfArchiveDoc>
+    <Label>
+        <HideAccount>Y</HideAccount>
+        <LabelTemplate>8X4_A4_PDF</LabelTemplate>
+    </Label>
+    <ODDLinkReq>Y</ODDLinkReq>
+</req:ShipmentRequest>

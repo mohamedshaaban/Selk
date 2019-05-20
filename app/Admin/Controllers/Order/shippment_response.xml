@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<res:ShipmentValidateErrorResponse xmlns:res='http://www.dhl.com' 
+    xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance' xsi:schemaLocation= 'http://www.dhl.com ship-val-err-res.xsd'>
+    <Response>
+        <ServiceHeader>
+            <MessageTime>2019-04-25T15:17:53.208+02:00</MessageTime>
+            <MessageReference>Package created from OpenCart</MessageReference>
+            <SiteID>SwanBoutique</SiteID>
+            <Password>denplrgFkC</Password>
+        </ServiceHeader>
+        <Status>
+            <ActionStatus/>
+            <Condition>
+                <ConditionCode>420505</ConditionCode>
+                <ConditionData>The destination location is invalid. Please check the data.</ConditionData>
+            </Condition>
+            <Condition>
+                <ConditionCode>420000</ConditionCode>
+                <ConditionData>Data error</ConditionData>
+            </Condition>
+            <Condition>
+                <ConditionCode>220001</ConditionCode>
+                <ConditionData>Failure - request</ConditionData>
+            </Condition>
+        </Status>
+    </Response>
+</res:ShipmentValidateErrorResponse><!-- ServiceInvocationId:20190425151752_7837_f182f521-bb47-425b-baee-d466521f1e10 -->
